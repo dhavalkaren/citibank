@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pay Bill</title>
+</head>
+<body>
+    <hr>
+    <h1 align="center">PAY BILLS</h1>
+    <hr>
+    <a href="login.html">Log In/Sign Up</a>&nbsp;|
+		<a href="index.html">Home</a> &nbsp;|
+		<a href="index.html#issue">Have A Issue</a>&nbsp;|
+		<a href="index.html#meet">Meet Us </a> &nbsp;|
+		<a href="index.html#services">Services</a> &nbsp;|
+	
+	<div align="right">
+        <a href="./mydetails.html">My Details</a>    
+	</div>
+    <center>
+            
+        <table border="1px" height="300" width="600">
+            <tr>
+                <td align="center">
+                    <label>Bill To Pay:</label>
+                </td>
+                <td align="center">
+                    <select id="bill">
+                        <option id="">Gas Bill</option>
+                        <option id="">Electricity Bill</option>
+                        <option id="">Water Bill</option>
+                    </select><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label>Card No:</label>
+                </td>
+                <td align="center">
+                    <input id="number" type="text" placeholder="Your Card no*" required><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label>CVV:</label>
+                </td>
+                <td align="center">
+                    <input type="number" id="cvv" placeholder="Enter valid cvv"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <label>Amount:</label>
+                </td>
+                <td align="center">
+                    <input type="number" id="amount" placeholder="Enter Ammount"><br><br>
+                </td>
+            </tr>
+        </table><br>
+        <input type="radio" name="type" id="Amercan-Exprss">American Express&nbsp;
+            <input type="radio" name="type" id="Master-card">Master Card&nbsp;
+            <input type="radio" name="type" id="Rupay">RuPay&nbsp;
+            <input type="radio" name="type" id="visa">VISA<br><br><br>
+        Pay from:<br><br>
+        <table>
+            <tr>
+                <td>
+                    Wallet
+                </td>
+                <td>
+                    <input type="radio" id="wallet" name="debit">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bank Account
+                </td>
+                <td>
+                    <input type="radio" id="bank" name="debit">
+                </td>
+            </tr>
+        </table><br>
+        <button>Procced</button>
+    </center>
+
+</body>
+</html>
