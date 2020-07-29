@@ -1,0 +1,66 @@
+
+#services{
+    color: black;
+    background-color: white;	
+}
+.card{
+    width: 260px;
+    height: 250px;
+    /* height: fit-content;*/
+     text-shadow:3px 3px rgb(0, 0, 3);
+    text-align: center;
+    padding-left: .7%; 
+    padding-top: 6%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 5px; 
+    margin: 2%;
+    transition: transform .4s;
+    color: rgb(18, 70, 129);
+    background-color: rgb(12, 7, 7);
+    
+}
+.card:hover{
+    transform: scale(1.4);
+}
+#issue{
+    color: black;
+    background-color: white;
+}
+.menu{
+    height: 70px;
+    position:-webkit-sticky;
+    box-shadow: 2px 2px 20px black;
+}
+.info{
+    padding-left: 140px;
+    color: black;
+    background-color: white;
+}
+
+.left{
+    
+    background-color:rgb(0, 0, 0);
+    position:fixed;
+}
+
+.right {
+    
+    right: 500px;
+    background-color: rgb(0, 0, 0);
+}
+a:link,a:visited{
+    width: 50px;
+    height: 20px;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 20px black;
+}
+a:hover, a:active {
+    color: rgb(15, 4, 4);
+    background-color: rgb(255, 250, 250);
+}
