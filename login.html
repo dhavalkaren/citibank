@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <style>
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 20px;
+            font-size: xx-large;
+            font-family: cursive;
+            color: rgb(0, 0, 0);
+            text-decoration: solid;
+            text-shadow: 8px 8px 8px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+            border-style: solid;
+            background-image: url("img/money.jpg");
+
+        }
+    </style>
 </head>
+
 <body>
 
-<br><br><br>
-<hr>
-<h1 align="center">Login For Our Bank Services</h1>
-<hr><br><br><br>
-    <form action="./home.html" method="post" align="center">
-        <table>
-        <td>
-          <tr><label for="mail"><b>USERNAME:</b></label></tr>
-          <tr><input type="text" placeholder="Enter email_id" name="mail" required></tr><br><br>
-        </td>
-        <td>
-            <tr><label for="psw"><b>OTP:</b></label></tr>
-            <tr><input type="password" placeholder="Enter recieved otp" name="psw" required></tr><br><br>
-        </td>
-        <td>      
-            <tr colspan="2"><button type="submit">Login</button></tr><br>
-        </td>
-        <td>
-            <tr colspan="2"><label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me</tr><br>
-          </label>
-        </td>
-        <td>
-            <tr colspan="2"><a href="#">Forgot password?</a></span></tr><br>
-        </td>
-        <td> </td>
-        <td> </td>
-        <td>
-            <tr colspan="2"><a href="./signup.html">Add Account</a></span></tr><br>
-        </td>
-        </table>
-      </form>
+    <h1 align="center">Login For Our Bank Services</h1>
+    <div class="menu"><br>
+
+        <a href="login.html">Log In/Sign Up</a>&nbsp;&nbsp;
+        <a href="index.html">Home</a>&nbsp;&nbsp;
+        <a href="index.html#issue">Have A Issue</a>&nbsp;&nbsp;
+        <a href="index.html#meet">Meet Us </a> &nbsp;&nbsp;
+        <a href="index.html#services">Services</a>
+        <a href="./mydetails.html">Profile</a><br><br>
+
+    </div>
+    <div class="main">
+        <img src="img/coiin.jpg" height="539" width="1366">
+        <div class="box-2">
+            <form action="./index.html" method="post" align="center">
+                <table>
+                    <td>
+                        <tr><label for="mail"><b>USERNAME:</b></label></tr>
+                        <tr><input type="text" placeholder="Enter email_id" name="mail" required></tr><br><br>
+                    </td>
+                    <td>
+                        <tr><label for="psw"><b>OTP:</b></label></tr>
+                        <tr><input type="password" placeholder="Enter recieved otp" name="psw" required></tr><br><br>
+                    </td>
+                    <td>
+                        <tr colspan="2"><button type="submit">Login</button></tr><br>
+                    </td>
+                    <td>
+                        <tr colspan="2"><label>
+                                <input type="checkbox" checked="checked" name="remember"> Remember me</tr><br>
+                        </label>
+                    </td>
+                    <td>
+                        <tr colspan="2"><a href="#"
+                                style="text-align: center;font-size: xx-large;margin-top: 20px;color: lightsalmon;">Forgot
+                                password?</a></span></tr><br>
+                    </td>
+                    <td> </td>
+                    <td> </td>
+                    <td>
+                        <tr colspan="2"><a href="./signup.html">Add Account</a></span></tr><br>
+                    </td>
+                </table>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

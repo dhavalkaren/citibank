@@ -1,61 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DetailsPage</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .head {
+            margin: 0;
+            text-align: center;
+            font-size: 50px;
+            font-family: cursive;
+            color: rgb(0, 0, 0);
+            text-decoration: solid;
+            text-shadow: 8px 8px 8px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+            border-style: solid;
+            background-image: url("img/money.jpg");
+        }
+
+        .menu {
+            height: 70px;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            box-shadow: 2px 2px 20px black;
+        }
+
+        a:link,
+        a:visited {
+            width: 50px;
+            height: 20px;
+            font-size: 25px;
+            background-color: #000000;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 2px 2px 20px black;
+        }
+
+        a:hover,
+        a:active {
+            color: rgb(15, 4, 4);
+            background-color: rgb(255, 250, 250);
+        }
+    </style>
 </head>
+
 <body>
-<hr>
-<h1 align="center">My Details.</h1>
-<a href="login.html">Log In/Sign Up</a>&nbsp;|
-		<a href="index.html">Home</a> &nbsp;|
-		<a href="index.html#issue">Have A Issue</a>&nbsp;|
-		<a href="index.html#meet">Meet Us </a> &nbsp;|
-		<a href="index.html#services">Services</a> &nbsp;|
-	
-	<div align="right">
-        <a href="./mydetails.html">My Details</a>    
-	</div>
-<hr>
+
+    <div class="head">
+        My Details.
+    </div>
+    <div class="menu"><br>
+
+        <a href="login.html">Log In/Sign Up</a>&nbsp;&nbsp;
+        <a href="index.html">Home</a>&nbsp;&nbsp;
+        <a href="index.html#issue">Have A Issue</a>&nbsp;&nbsp;
+        <a href="index.html#meet">Meet Us </a> &nbsp;&nbsp;
+        <a href="index.html#services">Services</a>
+        <a href="./mydetails.html">Profile</a><br><br>
+
+    </div>
+    <hr>
     <b>Bank Information</b><br>
     The below is your Account Information<br>
     *Note:PLS donot share your Data to anyone.<br>
-<hr>
-<table border="1px">
-    <tr>
-        <td><h1>Full Name:</h1></td>
-        <td><h1><input type="text" placeholder="Full Name"></h1></td>
-        <td><h1>Birth Date:</h1></td>
-        <td><h1><input type="text" placeholder="birthdate"></h1></td>
-    </tr>
-    <tr>
-        <td><h1>Bank Name:</h1></td>
-        <td><h1><input type="text" name="bnknm" value="Bank Of India"></h1></td>
-        <td><h1>Email ID:</h1></td>
-        <td><h1><input type="text" placeholder="Linked Email is here"></h1></td>
-    </tr>
-    <tr>
-        <td><h1>Bank IFSC Code:</h1></td>
-        <td><h1><input type="text" name="bnkifsc" value="BOI1342"></h1></td>
-        <td><h1>MPIN:</h1></td>
-        <td><h1><input type="text" placeholder="MPin created is here" ></h1></td>
-    </tr>
-    <tr>
-        <td><h1>Permenent Address:</h1></td>
-        <td><h1><textarea id="w3review" placeholder="Permanent Address" name="addrs" rows="4" cols="50"></textarea>
-        </h1></td>
-        <td><h1>Communication Address:</h1></td>
-        <td><h1><textarea id="w3review" placeholder="Communication Address" name="addrs" rows="4" cols="50"></textarea>
-        </h1></td>
-    </tr>
-    <tr>
-        <td><h1>Phone Number:</h1></td>
-        <td><h1><input type="text" name="phn" placeholder="Phone Number"></h1></td>
-        <td><h1>Account Number:</h1></td>
-        <td><h1><input type="text" placeholder="Account Number" ></h1></td>
-    </tr>
-</table>
-    
+    <hr>
+    <table border="1px">
+        <tr>
+            <td>
+                <h1>Full Name:</h1>
+            </td>
+            <td>
+                <h1><input type="text" placeholder="Full Name"></h1>
+            </td>
+            <td>
+                <h1>Birth Date:</h1>
+            </td>
+            <td>
+                <h1><input type="text" placeholder="birthdate"></h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Bank Name:</h1>
+            </td>
+            <td>
+                <h1><input type="text" name="bnknm" value="Bank Of India"></h1>
+            </td>
+            <td>
+                <h1>Email ID:</h1>
+            </td>
+            <td>
+                <h1><input type="text" placeholder="Linked Email is here"></h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Bank IFSC Code:</h1>
+            </td>
+            <td>
+                <h1><input type="text" name="bnkifsc" value="BOI1342"></h1>
+            </td>
+            <td>
+                <h1>MPIN:</h1>
+            </td>
+            <td>
+                <h1><input type="text" placeholder="MPin created is here"></h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Permenent Address:</h1>
+            </td>
+            <td>
+                <h1><textarea id="w3review" placeholder="Permanent Address" name="addrs" rows="4" cols="50"></textarea>
+                </h1>
+            </td>
+            <td>
+                <h1>Communication Address:</h1>
+            </td>
+            <td>
+                <h1><textarea id="w3review" placeholder="Communication Address" name="addrs" rows="4"
+                        cols="50"></textarea>
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h1>Phone Number:</h1>
+            </td>
+            <td>
+                <h1><input type="text" name="phn" placeholder="Phone Number"></h1>
+            </td>
+            <td>
+                <h1>Account Number:</h1>
+            </td>
+            <td>
+                <h1><input type="text" placeholder="Account Number"></h1>
+            </td>
+        </tr>
+    </table>
+
 </body>
+
 </html>
