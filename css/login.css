@@ -1,46 +1,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url('img/bat1.jpg');
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 
-
-.box-2 {
-    width: 600px;
-    height: 500px;
-    background: rgba(0, 0, 0, 0.5);
-    color: wheat;
-    left: 50%;
-    top: 50%;
-    bottom: 50%;
-    right: 50%;
-    position: absolute;
-    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0);
-    transform: translate(-50%, -40%);
-    box-sizing: border-box;
-    padding: 70px 30px;
+.left{
+    width: 50%;
+    height:543px;
+    float: left;
+    position: relative;
+    background-color: black;
 }
-
-
-
-.box-2 input {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.box-2 input[type="text"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: lightsalmon;
-    font-size: 16px;
+.right{
+    width: 50%;
+    height:543px;
+    float: right;
+    position: relative;
+    background-color: rgb(221, 221, 221);
+    background-image: linear-gradient(-90deg, rgb(247, 233, 233), rgb(163, 162, 162));
 }
 
 .menu a:link,
@@ -71,38 +48,61 @@ a:active {
     box-shadow: 2px 2px 20px black;
 }
 
-.box-2 input[type="password"] {
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: lightsalmon;
-    font-size: 16px;
+.box{
+    width: 600px;
+    height: 450px;
+    text-align: center;  
+    box-shadow: 2px 2px 20px black;
+    border-radius: 10px; 
+    transition: transform .3s;
+    color: rgb(11, 17, 26);
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(180deg, #f6ecfa,#000000);
+
+    
 }
 
-.box-2 input[type="submit"] {
-    height: 60px;
-    background: cornflowerblue;
-    font-size: 25px;
-    border: none;
-    outline: none;
-    color: #fff;
-    border-radius: 20px;
-    margin-top: 35px;
-    margin-bottom: 20px;
+.box input[type="text"]{
+    font-size: x-large;
 }
 
-.box-2 input[type="submit"]:hover {
-    cursor: pointer;
-    background: orange;
-    color: #000;
+label{
+    font-size: x-large;
 }
 
-.box-2 a {
+.box input[type="password"]{
+    font-size: x-large;
+}
+
+input[type="submit"]{
     text-align: center;
     font-size: xx-large;
-    margin-top: 20px;
-    color: lightsalmon;
+    background-color: #3672f4;
+    border-radius: 12px;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;    
+}
 
+
+.box a {
+    text-align: center;
+    font-size: xx-large;
+    background-color: #3672f4;
+    border-radius: 12px;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+.box a:hover {
+    text-align: center;
+    font-size: xx-large;
+    background-color: #0050fd;
+    border-radius: 12px;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    display: inline-block;
 }
