@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+}
+.footer{
+    background-color: #000000;
+    color: aliceblue;
+}
+.head {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    text-shadow: 8px 8px 8px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+    border-style: solid;
+    background-image: url("../img/money.jpg");
+}
+
+.menu {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    box-shadow: 2px 2px 20px black;
+}
+.fndtr{
+    background-image: url("../img/ftrwl.jpg");
+}
+.fndtr button{
+    background-color: rgb(107, 114, 112);
+    height: 40px;
+    width: 500px;
+    border-radius: 12px;
+}
+.fndtr button:hover{
+    background-color: rgb(53, 52, 52);
+    color: beige;
+    height: 40px;
+    width: 500px;
+    border-radius: 12px;
+}
+.fndtr input[type="text"]{
+    width: 600px;height:50px;border-radius: 12px;background-color: rgb(216, 230, 230);color: #241b1b;
+}
+.fndtr textarea{
+    width: 600px;height:100px;border-radius: 12px;background-color: rgb(216, 230, 230);color: #f2f2f2;
+}
+.fndtr table{
+    box-shadow: 8px 8px 8px black;
+    background: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fndtr tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.fndtr tr:nth-child(odd) {
+    background-color: rgb(146, 141, 141);
+}
+a:link,
+a:visited {
+    width: 50px;
+    height: 20px;
+    font-size: 25px;
+    background-color: #000000;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 20px black;
+}
+
+a:hover,
+a:active {
+    color: rgb(15, 4, 4);
+    background-color: rgb(255, 250, 250);
+}

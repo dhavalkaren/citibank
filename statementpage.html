@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,19 @@
     <style>
         body {
             margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .trnstable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .trnstable tr:nth-child(odd) {
+            background-color: rgb(147, 201, 236);
         }
 
         .head {
@@ -51,112 +65,121 @@
         }
     </style>
 </head>
+
 <body>
 
-<div class="head">
-    STATEMENTS FOR PAST 100 TRANSACTIONS
-</div>
-<div class="menu"><br>
+    <div class="head">
+        STATEMENTS FOR PAST 100 TRANSACTIONS
+    </div>
+    <div class="menu"><br>
 
-    <i class="fa fa-sign-in" aria-hidden="true" style="color: aliceblue;"></i><a href="login.html" >Log In/Sign Up</a>&nbsp;&nbsp;
-    <i class="fa fa-home" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html" >Home</a>&nbsp;&nbsp;
-    <i class="fa fa-info-circle" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#issue" >Have A Issue</a>&nbsp;&nbsp;
-    <i class="fa fa-male" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#meet" >Meet Us </a> &nbsp;&nbsp;
-    <i class="fa fa-university" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#services" >Services</a>
-    <i class="fa fa-address-card-o" aria-hidden="true"style="color: aliceblue;"></i><a href="./mydetails.html">Profile</a><br><br>
+        <i class="fa fa-sign-in" aria-hidden="true" style="color: aliceblue;"></i><a href="login.html">Log In/Sign
+            Up</a>&nbsp;&nbsp;
+        <i class="fa fa-home" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html">Home</a>&nbsp;&nbsp;
+        <i class="fa fa-info-circle" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html#issue">Have A
+            Issue</a>&nbsp;&nbsp;
+        <i class="fa fa-male" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html#meet">Meet Us </a>
+        &nbsp;&nbsp;
+        <i class="fa fa-university" aria-hidden="true" style="color: aliceblue;"></i><a
+            href="index.html#services">Services</a>
+        <i class="fa fa-address-card-o" aria-hidden="true" style="color: aliceblue;"></i><a
+            href="./mydetails.html">Profile</a><br><br>
 
-</div>
+    </div>
 
-<br><br>
-<form action="./home.html">
-    <table align="center" border="1px" style="width:900px ">
-        <thead>
-        <tr>
-        <th>No.</th>
-        <th>Description</th>
-        <th>from/to</th>
-        <th>withdrawl</th>
-        <th>deposit</th>
-        <th>balance</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-        <td colspan="6">
-        <div class="links"></div>
-        </td>
-        </tr>
-        </tfoot>
-        <tbody>
-        <tr>
-        <td align="center">1</td>
-        <td>choclates</td>
-        <td>ravi</td>
-        <td>500</td>
-        <td></td>
-        <td>5000.00</td>
-        </tr>
-        <tr>
-        <td align="center">2</td>
-        <td>waffles</td>
-        <td>shyam</td>
-        <td>600</td>
-        <td> </td>
-        <td>6000.00</td>
-        </tr>
-        <tr>
-        <td align="center">3</td>
-        <td>For meetings</td>
-        <td>Akash</td>
-        <td> </td>
-        <td>10000</td>
-        <td>20000</td>
-        </tr>
-        <tr>
-        <td align="center">4</td>
-        <td>Movie_Income</td>
-        <td>Darshan</td>
-        <td> </td>
-        <td>40000</td>
-        <td>500000</td>
-        </tr>
-        <tr>
-            <td align="center">4</td>
-            <td>Movie_Income</td>
-            <td>Darshan</td>
-            <td> </td>
-            <td>40000</td>
-            <td>500000</td>
-        </tr>
-        <tr>
-            <td align="center">4</td>
-            <td>Site_Income</td>
-            <td>Ritik</td>
-            <td> </td>
-            <td>40000</td>
-            <td>500000</td>
-        </tr>
-        <tr>
-            <td align="center">4</td>
-            <td>Music_Income</td>
-            <td>Rushik</td>
-            <td> </td>
-            <td>40000</td>
-            <td>500000</td>
-        </tr>
-        <tr>
-            <td align="center">4</td>
-            <td>Birthday Party</td>
-            <td>Dhaval</td>
-            <td> </td>
-            <td>40000</td>
-            <td>500000</td>
-        </tr>
-        <tr><td colspan="6" align="center"><input type="submit" value="HOME" ></td></tr>
-        </tbody>
-        </table>
-        
-    </form>
+    <br><br>
+    <div class="trnstable">
+        <form action="./home.html">
+            <table align="center" border="1px" style="width:1200px ">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Description</th>
+                        <th>from/to</th>
+                        <th>withdrawl</th>
+                        <th>deposit</th>
+                        <th>balance</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">
+                            <div class="links"></div>
+                        </td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td align="center">1</td>
+                        <td>choclates</td>
+                        <td>ravi</td>
+                        <td>500</td>
+                        <td></td>
+                        <td>5000.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <td>waffles</td>
+                        <td>shyam</td>
+                        <td>600</td>
+                        <td> </td>
+                        <td>6000.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td>For meetings</td>
+                        <td>Akash</td>
+                        <td> </td>
+                        <td>10000</td>
+                        <td>20000</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Movie_Income</td>
+                        <td>Darshan</td>
+                        <td> </td>
+                        <td>40000</td>
+                        <td>500000</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Movie_Income</td>
+                        <td>Darshan</td>
+                        <td> </td>
+                        <td>40000</td>
+                        <td>500000</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Site_Income</td>
+                        <td>Ritik</td>
+                        <td> </td>
+                        <td>40000</td>
+                        <td>500000</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Music_Income</td>
+                        <td>Rushik</td>
+                        <td> </td>
+                        <td>40000</td>
+                        <td>500000</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Birthday Party</td>
+                        <td>Dhaval</td>
+                        <td> </td>
+                        <td>40000</td>
+                        <td>500000</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" align="center"><input type="submit" value="HOME"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
     <hr>
     <div class="footer" style="background-color: #000000;color: #fffde4;">
         <center>
@@ -173,7 +196,8 @@
                     <td>
                         <br>
                         <font size="+2"><i class="fa fa-question" aria-hidden="true"></i> FAQ</font><br><br>
-                        Read the Frequently Asked <br>Questions about our Services and  <br>see if your question has been answered.
+                        Read the Frequently Asked <br>Questions about our Services and <br>see if your question has been
+                        answered.
                     </td>
                 </tr>
                 <tr>
@@ -182,13 +206,15 @@
                         <font size="+10"><i class="fa fa-bar-chart" aria-hidden="true"></i> CITIBANK</font>
                     </td>
                     <td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> CitiBank Bank Website
-                        &nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a style="color: aliceblue"
-                            herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+                        &nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a
+                            style="color: aliceblue" herf="#about">About</a> - <a style="color: aliceblue;"
+                            href="policies.html">Privacy
                             Policy</a></td>
                 </tr>
             </table>
-    
+
         </center>
-        </div>
+    </div>
 </body>
+
 </html>

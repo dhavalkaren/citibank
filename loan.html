@@ -4,52 +4,7 @@
 <head>
     <title>Apply For Loan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body {
-            background-color: #5d26c1;
-            background-image: linear-gradient(90deg, #005aa7, #fffde4);
-            margin: 0px;
-        }
-
-        .head {
-            margin: 0;
-            text-align: center;
-            font-size: 50px;
-            font-family: cursive;
-            color: rgb(0, 0, 0);
-            text-decoration: solid;
-            text-shadow: 8px 8px 8px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-            border-style: solid;
-            background-image: url("img/money.jpg");
-        }
-
-        .menu {
-            height: 70px;
-            position: sticky;
-            top: 0;
-            background-color: black;
-            box-shadow: 2px 2px 20px black;
-        }
-
-        a:link,
-        a:visited {
-            width: 50px;
-            height: 20px;
-            font-size: 25px;
-            background-color: #000000;
-            color: white;
-            padding: 14px 25px;
-            text-align: center;
-            text-decoration: none;
-            box-shadow: 2px 2px 20px black;
-        }
-
-        a:hover,
-        a:active {
-            color: rgb(15, 4, 4);
-            background-color: rgb(255, 250, 250);
-        }
-    </style>
+    <link rel="stylesheet" href="css/loan.css">
 </head>
 
 <body>
@@ -59,63 +14,70 @@
     </div>
     <div class="menu"><br>
 
-        <i class="fa fa-sign-in" aria-hidden="true" style="color: aliceblue;"></i><a href="login.html" >Log In/Sign Up</a>&nbsp;&nbsp;
-        <i class="fa fa-home" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html" >Home</a>&nbsp;&nbsp;
-        <i class="fa fa-info-circle" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#issue" >Have A Issue</a>&nbsp;&nbsp;
-        <i class="fa fa-male" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#meet" >Meet Us </a> &nbsp;&nbsp;
-        <i class="fa fa-university" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#services" >Services</a>
-        <i class="fa fa-address-card-o" aria-hidden="true"style="color: aliceblue;"></i><a href="./mydetails.html">Profile</a><br><br>
+        <i class="fa fa-sign-in" aria-hidden="true" style="color: aliceblue;"></i><a href="login.html">Log In/Sign
+            Up</a>&nbsp;&nbsp;
+        <i class="fa fa-home" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html">Home</a>&nbsp;&nbsp;
+        <i class="fa fa-info-circle" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html#issue">Have A
+            Issue</a>&nbsp;&nbsp;
+        <i class="fa fa-male" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html#meet">Meet Us </a>
+        &nbsp;&nbsp;
+        <i class="fa fa-university" aria-hidden="true" style="color: aliceblue;"></i><a
+            href="index.html#services">Services</a>
+        <i class="fa fa-address-card-o" aria-hidden="true" style="color: aliceblue;"></i><a
+            href="./mydetails.html">Profile</a><br><br>
 
     </div>
 
     <br><br>
-    <table align="center" border="1px" height="450" width="1200">
-        <tr>
-            <td align="center">
-                <h2>Which Type Of Loan:</h2>
-            </td>
-            <td align="center"><select id="loan">
-                    <option value="personal">Personal Loan</option>
-                    <option value="home">Home Loan</option>
-                    <option value="car">Car Loan</option>
-                    <option value="education">Educational Loan</option>
-                    <option value="instant">Instant Loan</option>
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td align="center">
-                <h2>Name:</h2>
-            </td>
-            <td align="center"><input type="text" placeholder="Enter Full Name"></td>
-        </tr>
-        <tr>
-            <td align="center">
-                <h2>Email ID:</h2>
-            </td>
-            <td align="center"><input type="text" placeholder="Enter valid email id"></td>
-        </tr>
-        <tr>
-            <td align="center">
-                <h2>Mobile Number</h2>
-            </td>
-            <td align="center"><input type="text" placeholder="Enter valid mobile number"></td>
-        </tr>
-        <tr>
-            <td align="center">
-                <h2>Address:</h2>
-            </td>
-            <td align="center"><input type="text" placeholder="Enter Address to verify for loan"></td>
-        </tr>
-        <tr>
-            <td align="center">
-                <h2>Reason:</h2>
-            </td>
-            <td align="center"><input type="text" placeholder="Enter full Description For Applying For Loan"></td>
-        </tr>
+    <div class="loan">
+        <table align="center" border="1px" height="450" width="1200">
+            <tr>
+                <td align="center">
+                    <h2>Which Type Of Loan:</h2>
+                </td>
+                <td align=""><select id="loan">
+                        <option value="personal">Personal Loan</option>
+                        <option value="home">Home Loan</option>
+                        <option value="car">Car Loan</option>
+                        <option value="education">Educational Loan</option>
+                        <option value="instant">Instant Loan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="">
+                    <h2>Name:</h2>
+                </td>
+                <td align=""><input type="text" placeholder="Enter Full Name"></td>
+            </tr>
+            <tr>
+                <td align="">
+                    <h2>Email ID:</h2>
+                </td>
+                <td align=""><input type="text" placeholder="Enter valid email id"></td>
+            </tr>
+            <tr>
+                <td align="">
+                    <h2>Mobile Number</h2>
+                </td>
+                <td align=""><input type="text" placeholder="Enter valid mobile number"></td>
+            </tr>
+            <tr>
+                <td align="">
+                    <h2>Address:</h2>
+                </td>
+                <td align=""><input type="text" placeholder="Enter Address to verify for loan"></td>
+            </tr>
+            <tr>
+                <td align="">
+                    <h2>Reason:</h2>
+                </td>
+                <td align=""><input type="text" placeholder="Enter full Description For Applying For Loan"></td>
+            </tr>
 
-    </table><br><br>
-    <center><button>APPLY FOR LOAN</button></center>
+        </table><br><br>
+        <center><button>APPLY FOR LOAN</button></center>
+    </div>
     <hr>
     <div class="footer" style="background-color: #000000;color: #fffde4;">
         <center>
@@ -132,7 +94,8 @@
                     <td>
                         <br>
                         <font size="+2"><i class="fa fa-question" aria-hidden="true"></i> FAQ</font><br><br>
-                        Read the Frequently Asked <br>Questions about our Services and  <br>see if your question has been answered.
+                        Read the Frequently Asked <br>Questions about our Services and <br>see if your question has been
+                        answered.
                     </td>
                 </tr>
                 <tr>
@@ -141,14 +104,15 @@
                         <font size="+10"><i class="fa fa-bar-chart" aria-hidden="true"></i> CITIBANK</font>
                     </td>
                     <td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> CitiBank Bank Website
-                        &nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a style="color: aliceblue"
-                            herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+                        &nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a
+                            style="color: aliceblue" herf="#about">About</a> - <a style="color: aliceblue;"
+                            href="policies.html">Privacy
                             Policy</a></td>
                 </tr>
             </table>
-    
+
         </center>
-        </div>
+    </div>
 </body>
 
 </html>

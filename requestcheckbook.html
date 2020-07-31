@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +31,38 @@
             background-color: black;
             box-shadow: 2px 2px 20px black;
         }
+        .rqst{
+            background-image: url("img/drk.jpg");            
+        }
+        .rqst table {
+            box-shadow: 4px 4px 4px 4px black;
+        }
+
+        .rqst input[type="text"],
+        textarea {
+            width: 600px;
+            height: 50px;
+            border-radius: 12px;
+            background-color: rgb(216, 230, 230);
+            color: #271c1c;
+            font-size: large;
+        }
+
+        .rqst button {
+            background-color: rgb(91, 161, 218);
+            height: 40px;
+            width: 500px;
+            box-shadow: 4px 4px 4px 4px black;
+            border-radius: 12px;
+        }
+
+        .rqst button:hover {
+            background-color: rgb(35, 156, 236);
+            color: beige;
+            height: 40px;
+            width: 500px;
+            border-radius: 12px;
+        }
 
         a:link,
         a:visited {
@@ -51,51 +84,61 @@
         }
     </style>
 </head>
+
 <body>
-   
+
     <div class="head">
         Request CheckBook
     </div>
     <div class="menu"><br>
 
-        <i class="fa fa-sign-in" aria-hidden="true" style="color: aliceblue;"></i><a href="login.html" >Log In/Sign Up</a>&nbsp;&nbsp;
-        <i class="fa fa-home" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html" >Home</a>&nbsp;&nbsp;
-        <i class="fa fa-info-circle" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#issue" >Have A Issue</a>&nbsp;&nbsp;
-        <i class="fa fa-male" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#meet" >Meet Us </a> &nbsp;&nbsp;
-        <i class="fa fa-university" aria-hidden="true"style="color: aliceblue;"></i><a href="index.html#services" >Services</a>
-        <i class="fa fa-address-card-o" aria-hidden="true"style="color: aliceblue;"></i><a href="./mydetails.html">Profile</a><br><br>
+        <i class="fa fa-sign-in" aria-hidden="true" style="color: aliceblue;"></i><a href="login.html">Log In/Sign
+            Up</a>&nbsp;&nbsp;
+        <i class="fa fa-home" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html">Home</a>&nbsp;&nbsp;
+        <i class="fa fa-info-circle" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html#issue">Have A
+            Issue</a>&nbsp;&nbsp;
+        <i class="fa fa-male" aria-hidden="true" style="color: aliceblue;"></i><a href="index.html#meet">Meet Us </a>
+        &nbsp;&nbsp;
+        <i class="fa fa-university" aria-hidden="true" style="color: aliceblue;"></i><a
+            href="index.html#services">Services</a>
+        <i class="fa fa-address-card-o" aria-hidden="true" style="color: aliceblue;"></i><a
+            href="./mydetails.html">Profile</a><br><br>
 
     </div>
+    <div class="rqst">
+        <table align="center">
+            <tr>
+                <td>
+                    <h2>Account Number</h2>
+                </td>
+                <td><input type="text" placeholder="Enter Account Number"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Number Of Pages</h2>
+                </td>
+                <td><input type="text" placeholder="Enter Number of Pages you want"></td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Recieving Address</h2>
+                </td>
+                <td><textarea placeholder="Enter Address To Deliver CheckBook" name="addrs" rows="5"
+                        cols="70"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">*After Confirming Your delivery address
+                    it will take 2 Working Days<br> to deliver and some delivery charges will be <br>
+                    charged to you at home.</td>
+            </tr>
 
-    <table align="center">
-        <tr>
-            <td><h2>Account Number</h2></td>
-            <td><input type="text" placeholder="Enter Account Number"></td>
-        </tr>
-        <tr>
-            <td><h2>Number Of Pages</h2></td>
-            <td><input type="text" placeholder="Enter Number of Pages you want"></td>
-        </tr>
-        <tr>
-            <td><h2>Recieving Address</h2></td>
-            <td><textarea placeholder="Enter Address To Deliver CheckBook" name="addrs" rows="4" cols="50"></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2" align="center">*After Confirming Your delivery address
-            it will take 2 Working Days<br> to deliver and some delivery charges will be <br>
-            charged to you at home.</td>
-        </tr>
-        
-    </table>
-    <br><br><br>
-    <table align="center">
-        <tr>
-            <td colspan="2" align="center">
-                <button >Request CheckBooK</button>
-            </td>
-        </tr>
-    </table>
-    <hr>
+        </table>
+        <br><br>
+        <center>
+            <button>Request CheckBooK</button>
+        </center>
+        <br><br><br>
+    </div>
     <div class="footer" style="background-color: #000000;color: #fffde4;">
         <center>
             <table border="0" width="1235px" height="300px" style="margin-left: 5%">
@@ -111,7 +154,8 @@
                     <td>
                         <br>
                         <font size="+2"><i class="fa fa-question" aria-hidden="true"></i> FAQ</font><br><br>
-                        Read the Frequently Asked <br>Questions about our Services and  <br>see if your question has been answered.
+                        Read the Frequently Asked <br>Questions about our Services and <br>see if your question has been
+                        answered.
                     </td>
                 </tr>
                 <tr>
@@ -120,13 +164,15 @@
                         <font size="+10"><i class="fa fa-bar-chart" aria-hidden="true"></i> CITIBANK</font>
                     </td>
                     <td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> CitiBank Bank Website
-                        &nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a style="color: aliceblue"
-                            herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+                        &nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a
+                            style="color: aliceblue" herf="#about">About</a> - <a style="color: aliceblue;"
+                            href="policies.html">Privacy
                             Policy</a></td>
                 </tr>
             </table>
-    
+
         </center>
-        </div>
+    </div>
 </body>
+
 </html>
