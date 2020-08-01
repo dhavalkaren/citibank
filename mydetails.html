@@ -6,58 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DetailsPage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <style>
-        body {
-            margin: 0;
-        }
-
-        .head {
-            margin: 0;
-            text-align: center;
-            font-size: 50px;
-            font-family: cursive;
-            color: rgb(0, 0, 0);
-            text-decoration: solid;
-            text-shadow: 8px 8px 8px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
-            border-style: solid;
-            background-image: url("img/money.jpg");
-        }
-
-        .menu {
-            height: 70px;
-            position: sticky;
-            top: 0;
-            background-color: black;
-            box-shadow: 2px 2px 20px black;
-        }
-
-        .pro {
-            background-image: url("img/stc.jpeg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        a:link,
-        a:visited {
-            width: 50px;
-            height: 20px;
-            font-size: 25px;
-            background-color: #000000;
-            color: white;
-            padding: 14px 25px;
-            text-align: center;
-            text-decoration: none;
-            box-shadow: 2px 2px 20px black;
-        }
-
-        a:hover,
-        a:active {
-            color: rgb(15, 4, 4);
-            background-color: rgb(255, 250, 250);
-        }
-    </style>
+    <link rel="stylesheet" href="./css/mydetails.css">
 </head>
 
 <body>
@@ -88,79 +37,79 @@
         *Note:PLS donot share your Data to anyone.<br>
         <hr>
 
-        <table border="1px">
+        <table >
             <tr>
                 <td>
-                    <h1>Full Name:</h1>
+                    <h2>Full Name:</h2>
                 </td>
                 <td>
-                    <h1><input type="text" placeholder="Full Name"></h1>
+                    <h2><input type="text" placeholder="Full Name"></h2>
                 </td>
                 <td>
-                    <h1>Birth Date:</h1>
+                    <h2>Birth Date:</h2>
                 </td>
                 <td>
-                    <h1><input type="text" placeholder="birthdate"></h1>
+                    <h2><input type="text" placeholder="birthdate"></h2>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <h1>Bank Name:</h1>
+                    <h2>Bank Name:</h2>
                 </td>
                 <td>
-                    <h1><input type="text" name="bnknm" value="Bank Of India"></h1>
+                    <h2><input type="text" name="bnknm" value="CITI Bank"></h2>
                 </td>
                 <td>
-                    <h1>Email ID:</h1>
+                    <h2>Email ID:</h2>
                 </td>
                 <td>
-                    <h1><input type="text" placeholder="Linked Email is here"></h1>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h1>Bank IFSC Code:</h1>
-                </td>
-                <td>
-                    <h1><input type="text" name="bnkifsc" value="BOI1342"></h1>
-                </td>
-                <td>
-                    <h1>MPIN:</h1>
-                </td>
-                <td>
-                    <h1><input type="text" placeholder="MPin created is here"></h1>
+                    <h2><input type="text" placeholder="Linked Email is here"></h2>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <h1>Permenent Address:</h1>
+                    <h2>Bank IFSC Code:</h2>
                 </td>
                 <td>
-                    <h1><textarea id="w3review" placeholder="Permanent Address" name="addrs" rows="4"
+                    <h2><input type="text" name="bnkifsc" value="CT13342"></h2>
+                </td>
+                <td>
+                    <h2>MPIN:</h2>
+                </td>
+                <td>
+                    <h2><input type="text" placeholder="MPin created is here"></h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Permenent Address:</h2>
+                </td>
+                <td>
+                    <h2><textarea id="w3review" placeholder="Permanent Address" name="addrs" rows="4"
                             cols="50"></textarea>
-                    </h1>
+                    </h2>
                 </td>
                 <td>
-                    <h1>Communication Address:</h1>
+                    <h2>Communication Address:</h2>
                 </td>
                 <td>
-                    <h1><textarea id="w3review" placeholder="Communication Address" name="addrs" rows="4"
+                    <h2><textarea id="w3review" placeholder="Communication Address" name="addrs" rows="4"
                             cols="50"></textarea>
-                    </h1>
+                    </h2>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <h1>Phone Number:</h1>
+                    <h2>Phone Number:</h2>
                 </td>
                 <td>
-                    <h1><input type="text" name="phn" placeholder="Phone Number"></h1>
+                    <h2><input type="text" name="phn" placeholder="Phone Number"></h2>
                 </td>
                 <td>
-                    <h1>Account Number:</h1>
+                    <h2>Account Number:</h2>
                 </td>
                 <td>
-                    <h1><input type="text" placeholder="Account Number"></h1>
+                    <h2><input type="text" placeholder="Account Number"></h2>
                 </td>
             </tr>
         </table>

@@ -1,10 +1,7 @@
 body {
     margin: 0;
 }
-.footer{
-    background-color: #000000;
-    color: aliceblue;
-}
+
 .head {
     margin: 0;
     text-align: center;
@@ -24,34 +21,37 @@ body {
     background-color: black;
     box-shadow: 2px 2px 20px black;
 }
-.fndtr{
-    background-image: url("../img/fnd.jpg");
+.mob{
+    background-image: url("../img/colour-stripe-background.jpg");
+    text-shadow:3px 3px 3px 3px black;
 }
-.fndtr button{
-    background-color: rgb(107, 114, 112);
-    height: 40px;
-    width: 500px;
+.mob table{
+    box-shadow: 3px 3px 3px 3px black;
+}
+.mob input[type="text"]{
+    width: 300px;
+    height: 30px;
     border-radius: 12px;
 }
-.fndtr button:hover{
-    background-color: rgb(53, 52, 52);
-    color: beige;
-    height: 40px;
-    width: 500px;
+.mob textarea{
+    width: 300px;
+    height: 70px;
     border-radius: 12px;
 }
-.fndtr input[type="text"]{
-    width: 600px;height:50px;border-radius: 12px;background-color: rgb(216, 230, 230);color: #241b1b;
+.mob button{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #cab9e4;
 }
-.fndtr textarea{
-    width: 600px;height:100px;border-radius: 12px;background-color: rgb(216, 230, 230);color: #f2f2f2;
+.mob button:hover{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px black;
+    background-color: #9d67ee;
 }
-.fndtr table{
-    box-shadow: 8px 8px 8px 8px black;
-    background: transparent;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 a:link,
 a:visited {
     width: 50px;

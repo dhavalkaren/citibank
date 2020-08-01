@@ -1,10 +1,7 @@
 body {
     margin: 0;
 }
-.footer{
-    background-color: #000000;
-    color: aliceblue;
-}
+
 .head {
     margin: 0;
     text-align: center;
@@ -24,34 +21,26 @@ body {
     background-color: black;
     box-shadow: 2px 2px 20px black;
 }
-.fndtr{
-    background-image: url("../img/fnd.jpg");
-}
-.fndtr button{
-    background-color: rgb(107, 114, 112);
-    height: 40px;
-    width: 500px;
-    border-radius: 12px;
-}
-.fndtr button:hover{
-    background-color: rgb(53, 52, 52);
-    color: beige;
-    height: 40px;
-    width: 500px;
-    border-radius: 12px;
-}
-.fndtr input[type="text"]{
-    width: 600px;height:50px;border-radius: 12px;background-color: rgb(216, 230, 230);color: #241b1b;
-}
-.fndtr textarea{
-    width: 600px;height:100px;border-radius: 12px;background-color: rgb(216, 230, 230);color: #f2f2f2;
-}
-.fndtr table{
-    box-shadow: 8px 8px 8px 8px black;
-    background: transparent;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
+.pro {
+    background-image: url("../img/stc.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pro table{
+    box-shadow: 5px 5px 5px 5px black;
+    margin-left: 20px;
+}
+.pro input[type="text"]{
+    width: 300px;
+    border-radius: 12px;
+    height: 30px;
+    font-size: x-large;
+}
+.pro textarea{
+    border-radius: 12px;
+}
 a:link,
 a:visited {
     width: 50px;
