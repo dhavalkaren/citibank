@@ -1,27 +1,30 @@
 body {
-    background-color: #5d26c1; 
-    background-image: linear-gradient(90deg, #005aa7,#fffde4);
-    margin: 0px;
+    margin: 0px; background-image: url("../img/crop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .box-2 {
     width: 600px;
     height: 700px;
     background: rgba(0, 0, 0, 0.5);
-    color: rgb(245, 107, 43);
+    color: rgb(44, 28, 21);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
     left: 50%;
     top: 19%;
     bottom: 30%;
     right: 50%;
     position: absolute;
-    box-shadow: 5px 5px 5px 5px rgb(149, 250, 250);
+    box-shadow: 5px 5px 5px 5px rgb(5, 7, 7);
     transform: translate(-50%, -10%);
     box-sizing: border-box;
     padding: 70px 30px;
   }
 
   ::placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(71, 49, 49);
+    font-weight: bolder;
   }
 
   .box-2 input[type="text"] {

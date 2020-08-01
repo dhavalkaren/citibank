@@ -44,6 +44,34 @@
         .bill{
             background-image: url("img/hx2.jpg");
         }
+        .bill table{
+            box-shadow: 4px 4px 4px 4px black;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+        .bill input[type="text"]{
+            width: 300px;
+            border-radius: 12px;
+            height: 30px;
+        }
+        .bill input[type="radio"]{
+            box-shadow: 2px 2px 2px black;
+        }
+        .bill input[type="password"]{
+            width: 300px;
+            border-radius: 12px;
+            height: 30px;
+        }
+        .bill input[type="number"]{
+            width: 300px;
+            border-radius: 12px;
+            height: 30px;
+        }
+        #bill{
+            width: 300px;
+            border-radius: 12px;
+            height: 30px;
+        }
         a:hover,
         a:active {
             color: rgb(15, 4, 4);
@@ -70,7 +98,7 @@
     <br><br>
     <center>
             
-        <table border="1px" height="300" width="600">
+        <table  height="300" width="600">
             <tr>
                 <td align="center">
                     <label>Bill To Pay:</label>
@@ -112,7 +140,7 @@
             <input type="radio" name="type" id="Master-card">Master Card&nbsp;
             <input type="radio" name="type" id="Rupay">RuPay&nbsp;
             <input type="radio" name="type" id="visa">VISA<br><br><br>
-        Pay from:<br><br>
+        <h3>Pay from:</h3>
         <table>
             <tr>
                 <td>
@@ -133,8 +161,9 @@
         </table><br>
         <button>Procced</button>
     </center>
+    <br>
 </div>
-    <hr>
+    
     <div class="footer" style="background-color: #000000;color: #fffde4;">
         <center>
             <table border="0" width="1235px" height="300px" style="margin-left: 5%">

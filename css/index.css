@@ -11,7 +11,6 @@ body {
 #services{
     color: black;
     background-color: white;	
-    background-image: linear-gradient(-90deg, #020202,#646262,#b7b6b8);
 }
 .card{
     width: 260px;
@@ -64,9 +63,28 @@ body {
 #issue{
     color: black;
     background-color: white;
-    background-image: linear-gradient(-90deg, #020202,#646262,#b7b6b8);
+ 
 }
 
+#issue input[type="text"]{
+    width: 500px;
+}
+#issue input[type="email"]{
+    width: 500px;
+}
+#issue button{
+    width: 200px;
+    margin-top: 60px;
+    height: 50px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 4px 4px black;
+}
+#issue input[type="password"]{
+    width: 500px;
+}
+#issue textarea{
+    width: 500px;
+}
 .menu{
     height: 70px;
     position:sticky;
@@ -78,7 +96,7 @@ body {
     padding-left: 140px;
     color: black;
     background-color: white;
-    background-image: linear-gradient(-90deg, #020202,#646262,#b7b6b8);
+
 }
 input[type=text],input[type=email]{
     border-radius: 20px;
