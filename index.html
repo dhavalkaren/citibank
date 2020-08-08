@@ -3,7 +3,13 @@
 <head>
 	<title>Welcome To CiTi BANK</title>
 	<link rel="stylesheet" href="./css/index.css">
+	<script src="./scripts/index.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body{
+			width: auto;
+		}
+	</style>
 </head>
 
 <body>
@@ -15,16 +21,75 @@
 
 		<div class="menu"><br>
 
-			<i class="fa fa-sign-in" aria-hidden="true"></i><a href="login.html" >Log In/Sign Up</a>&nbsp;&nbsp;
-			<i class="fa fa-home" aria-hidden="true"></i><a href="index.html" >Home</a>&nbsp;&nbsp;
-			<i class="fa fa-info-circle" aria-hidden="true"></i><a href="#issue" >Have A Issue</a>&nbsp;&nbsp;
-			<i class="fa fa-male" aria-hidden="true"></i><a href="#meet" >Meet Us </a> &nbsp;&nbsp;
-			<i class="fa fa-university" aria-hidden="true"></i><a href="#services" >Services</a>
-			<i class="fa fa-address-card-o" aria-hidden="true"></i><a href="./mydetails.html">Profile</a><br><br>
+			<a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Log In/Sign
+				Up</a>&nbsp;&nbsp;
+			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
+			<a href="#issue"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Have A
+				Issue</a>&nbsp;&nbsp;
+			<i class="fa fa-male" aria-hidden="true"></i><a href="#meet">Meet Us </a> &nbsp;&nbsp;
+			<a href="#services"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;&nbsp;Services</a>
+			<a href="./mydetails.html"><i class="fa fa-address-card-o"
+					aria-hidden="true"></i>&nbsp;&nbsp;Profile</a><br><br>
 
 		</div>
 
+		<div id="myNav" class="overlay">
+			<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="overlay-content">
+				<a href="./policy.html" target="_blank">Security & Policy </a><br>
+				<a href="#">Login As Admin </a><br>
+				<a href="./alluser.html">Clients</a><br>
+				<a href="index.html#meet" target="_blank">Contact</a><br>
+			</div>
+		</div><span style="font-size:20px;cursor:pointer;padding-left: 1230px;" onclick="openNav()">&#9776;
+			MORE</span>
 
+<div class="white" style="background-color: white;">
+	<br><br><br><br>
+</div>
+
+		<div class="slide">
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<img src="./img/meet.jpg" style="filter: blur(1px);width:100%; height: 550px;background-size: cover;">
+					<div class="text">
+						<h4 style="color: #fff9f9ef;font-size: 49px;">DO YOU NEED A NEW</h4>
+						<h1 style="color: #000000;font-size: 39px;">SERVICE OF BANK?</h1>
+						<h3 style="color: #050404;margin-bottom: 50px;font-size: 59px;">Check Coopbank included multiple features</h3>
+					</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/slide-02.jpg" style="width:100%; height: 550px;background-size: cover;">
+					<div class="text">
+						<h4 style="color: #4a8fcfc7;font-size: 39px;">OUR BANK CLIENTS</h4>
+						<h1 style="color: #5e5b5bc7;font-size: 29px;"> ALL AROUND WORLD</h1>
+						<h3 style="color: #0e0b0bc7;margin-bottom: 120px;font-size: 49px;">Check Coopbank CLIENTS MASS
+						</h3>
+					</div>
+				</div>
+
+				<div class="mySlides fade">
+					<img src="./img/slide-03.jpg" style="width:100%; height: 550px;background-size: cover;">
+					<div class="text" style="margin-left: 320px;">
+						<h4 style="color: #000000c4;font-size: 49px;">DO YOU NEED </h4>
+						<h1 style="color: #490d0dd0;font-size: 39px;">AN EDUCATIONAL LOAN?</h1>
+						<h3 style="color: #000000d0;margin-bottom: 110px;font-size: 39px;">Check Coopbank LOAN FEATURES
+						</h3>
+					</div>
+				</div>
+
+			</div>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+
+			
+
+		</div>
 
 
 		<div class="info">
@@ -32,7 +97,7 @@
 			<br>
 			<div class="card1" style="margin-left: 80px">
 				<!--background-image: linear-gradient(90deg, #f6ecfa,#000000);-->
-				<img src="./img/1.jpg" width="260" height="150">				
+				<img src="./img/1.jpg" width="260" height="150">
 				<center>
 					<font size="+2" style="color: rgb(247, 183, 130);">For your future</font><br><br>
 					Meet our Agent for all our range of products and services,
@@ -43,7 +108,7 @@
 				<img src="./img/2.jpg" width="260" height="150">
 				<center>
 					<font size="+2" style="color:  rgb(247, 183, 130);">Protection With You!</font><br><br>
-					Find all the support and information they need to make all decisions 
+					Find all the support and information they need to make all decisions
 					about saving for your future.
 				</center>
 			</div>
@@ -51,7 +116,7 @@
 				<img src="./img/3.jpg" width="260" height="150">
 				<center>
 					<font size="+2" style="color:  rgb(247, 183, 130);">Zone Saver</font><br><br>
-					Accompany relevant share you mean, 
+					Accompany relevant share you mean,
 					renewed and information of interest to learn to save you and your projects come true.
 				</center>
 			</div>
@@ -81,8 +146,8 @@
 					<a href="./loan.html">Apply For Loan</a>
 				</div>
 				<div class="card">
-					<img src="img/checkbook.png" height="200px" width="250px" style="margin-right:30px"><br>
-					<a href="./requestcheckbook.html">Request For Checkbook</a>
+					<img src="img/checkbook.png" onclick="checkbook()" height="200px" width="250px" style="margin-right:30px;"><br>
+					<a href="./requestcheckbook.html">Request Checkbook</a>
 				</div>
 				<div class="card">
 					<img src="img/movie.jpg" height="200px" width="250px" style="margin-right:30px"><br>
@@ -90,7 +155,7 @@
 				</div>
 				<div class="card">
 					<img src="img/mm.jpg" height="200px" width="250px" style="margin-right:30px"><br>
-					<a href="./fundmobile.html">Transfer By Mobile Number</a>
+					<a href="./fundmobile.html">Transfer By Mobile </a>
 				</div>
 				<div class="card">
 					<img src="img/bll.jpg" height="200px" width="250px" style="margin-right:30px"><br>
@@ -206,13 +271,13 @@
 					<tr></tr>
 					<tr></tr>
 					<tr>
-						<td colspan="2" align="center"><button style="">Send Feedback</button></td>
+						<td colspan="2" align="center"><button style="box-shadow: 2px 2px 2px black;">Send Feedback</button></td>
 					</tr>
 				</table>
 				<br><br><br><br><br><br><br><br><br>
 			</section>
 
-			<section id="meet" >
+			<section id="meet">
 				<br><br>
 				<h2>Meet Us </h2>
 				<hr>
@@ -237,17 +302,20 @@
 						<table border="0" width="1230px" height="300px" style="margin-left: 5%">
 							<tr>
 								<td>
-									<font size="+2"><i class="fa fa-shield" aria-hidden="true"></i>&nbsp;For Security</font><br><br>
+									<font size="+2"><i class="fa fa-shield" aria-hidden="true"></i>&nbsp;For Security
+									</font><br><br>
 									Got questions For Our Bank or the Bank Security?
 								</td>
 								<td>
-									<font size="+2"><i class="fa fa-university" aria-hidden="true"></i> Services</font><br><br>
+									<font size="+2"><i class="fa fa-university" aria-hidden="true"></i> Services</font>
+									<br><br>
 									Find out the service status of Our Bank and its <br>related services.
 								</td>
 								<td>
 									<br>
 									<font size="+2"><i class="fa fa-question" aria-hidden="true"></i> FAQ</font><br><br>
-									Read the Frequently Asked <br>Questions about our Services and  <br>see if your question has been answered.
+									Read the Frequently Asked <br>Questions about our Services and <br>see if your
+									question has been answered.
 								</td>
 							</tr>
 							<tr>
@@ -256,16 +324,18 @@
 									<font size="+10"><i class="fa fa-bar-chart" aria-hidden="true"></i> CITIBANK</font>
 								</td>
 								<td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> CitiBank Bank Website
-									&nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a style="color: aliceblue"
-										herf="#about">About</a> - <a style="color: aliceblue;" href="policies.html">Privacy
+									&nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a
+										style="color: aliceblue" herf="#about">About</a> - <a style="color: aliceblue;"
+										href="policies.html">Privacy
 										Policy</a></td>
 							</tr>
 						</table>
-				
+
 					</center>
-					</div>
+				</div>
 			</section>
 	</div>
+	
 </body>
 
 </html>

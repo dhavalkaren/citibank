@@ -1,58 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>View All Users</title>
-    
+    <style>
+        body{
+            margin: 0;
+        }
+        .header {
+            padding-top: 20px;
+            border: 2px;
+            height: 60px;
+            color: rgb(0, 0, 0);
+            text-decoration: solid;
+            text-shadow: 8px 8px 8px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
+            border-style: solid;
+            background-image: url("./img/money.jpg");
+            opacity: .8;
+        }
+
+        .menu {
+            height: 70px;
+            position: sticky;
+            top: 0;
+            background-color: black;
+            box-shadow: 2px 2px 20px black;
+        }
+
+        a:link,
+        a:visited {
+            width: 50px;
+            height: 20px;
+            font-size: 20px;
+            background-color: #000000;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 2px 2px 20px black;
+        }
+
+        a:hover,
+        a:active {
+            color: rgb(15, 4, 4);
+            background-color: rgb(255, 250, 250);
+        }
+        .main{
+            background-image: linear-gradient(170deg,black,white,black);
+        }
+        .main table{
+            width: 80%;
+            color:black;    
+            box-shadow: 6px 6px 6px 6px rgb(36, 29, 29);
+            font-size: x-large;
+            padding: 10px;
+        }
+        th{
+            text-align: left;
+            color: aliceblue;
+        }
+        tr{
+            text-shadow: 2px 2px 2px white;
+        }
+        .main button{
+            text-align: center;
+            border-radius: 12px;
+            text-shadow: 1px 1px 1px black;
+            width: 100px;
+        }
+    </style>
 </head>
+
 <body>
-    <hr>
+    <div class="header">
     <h1 align="center"> ALL USERS REGISTERED TO THE BANK </h1>
-    <hr><br><br>
-    <TABLE align="center" border="1px" style="width:600px ">
-        <TR>
+    </div>
+    <div class="menu"><br>
+
+        <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Log In/Sign
+            Up</a>&nbsp;&nbsp;
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
+        <a href="index.html#issue"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Have A
+            Issue</a>&nbsp;&nbsp;
+       <a href="index.html#meet"> <i class="fa fa-male" aria-hidden="true"></i> &nbsp;&nbsp;Meet Us </a> &nbsp;&nbsp;
+        <a href="index.html#services"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;&nbsp;Services</a>
+        <a href="./mydetails.html"><i class="fa fa-address-card-o"
+                aria-hidden="true"></i>&nbsp;&nbsp;Profile</a><br><br>
+
+    </div>
+    <div class="main">
+    <br><br>
+
+    <TABLE align="center">
+        <TR style="background-color: #000000;">
             <TH>FULLNAME</TH>
             <TH>BIRTHDATE</TH>
-            <TH>VIEW</TH>
             <TH>BLOCK</TH>
         </TR>
         <TR>
-           <TD>Raju Manmohan Shrivastav</TD>
-           <TD>05/9/2001</TD>
-           <TD><button type="submit">View</button></TD>
+            <TD>Raju Manmohan Shrivastav</TD>
+            <TD>05/9/2001</TD>
+             
             <TD><button type="submit">Block</button></TD>
         </TR>
         <TR>
-           <TD>Akash Kanubhau Lukhi</TD>
-           <TD>05/01/2001</TD>
-           <TD><button type="submit">View</button></TD>
+            <TD>Akash Kanubhau Lukhi</TD>
+            <TD>05/01/2001</TD>
+             
             <TD><button type="submit">Block</button></TD>
         </TR>
         <TR>
-           <TD>Meet SHAILESHBHAI KAMANI</TD>
-           <TD>6/7/2001</TD>
-           <TD><button type="submit">View</button></TD>
+            <TD>Meet SHAILESHBHAI KAMANI</TD>
+            <TD>6/7/2001</TD>
+             
             <TD><button type="submit">Block</button></TD>
         </TR>
         <TR>
             <TD>Jemis Bharat Lakhani</TD>
             <TD>6/7/2001</TD>
-            <TD><button type="submit">View</button></TD>
+             
             <TD><button type="submit">Block</button></TD>
-         </TR>
-         <TR>
+        </TR>
+        <TR>
             <TD>Darshan Bharat Varsani</TD>
             <TD>26/7/2001</TD>
-            <TD><button type="submit">View</button></TD>
+             
             <TD><button type="submit">Block</button></TD>
-         </TR>
-         <TR>
+        </TR>
+        <TR>
             <TD>Rushik Bipin Kheni</TD>
             <TD>16/7/2001</TD>
-            <TD><button type="submit">View</button></TD>
+             
             <TD><button type="submit">Block</button></TD>
-         </TR>
-     </TABLE>
+        </TR>
+    </TABLE><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 </body>
+
 </html>

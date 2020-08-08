@@ -6,34 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SignUp Page</title>
   <link rel="stylesheet" href="./css/signup.css">
+  <script src="./scripts/signup.js"></script>
+  <style>
+
+  </style>
 </head>
 
 <body>
+  <div id="snackbarnm">Name Required..</div>
+  <div id="snackbarpwd">Password Required..</div>
+  <div id="snackbareml">Email Required..</div>
+  <div id="snackbarphn">Phone Number Required..</div>
+  <div id="snackbarphnck">Phone Number Of 10 Digit..</div>
+  <div id="snackbaracc">Account Number Required..</div>
+  <div id="snackbaradd">Address Required..</div>
+  <div id="snackbarbd">BIRTHDAY Required..</div>
   <h1 align="center">FILL DETAILS FOR REGISTRATION*</h1>
   <div class="main">
     <div class="box-2">
-      <form action="./login.html" method="post" align="center">
+      <form name="myform" id="myform" align="center">
         <a href="./login.html">Already Have Acoount?</a>
         <table align="center">
           <tr>
             <td> <label for="name"><b>FULL NAME:</b></label></td>
-            <td><input type="text" placeholder="Last Middle First" name="name" required><br><br></td>
+            <td><input type="text" placeholder="Last Middle First" name="name"><br><br></td>
           </tr>
           <tr>
             <td><label for="psw"><b>VALID MPIN:</b></label></td>
-            <td><input type="password" placeholder="Enter mPin" name="mpin" required><br><br></td>
+            <td><input type="password" placeholder="Enter mPin" name="mpin"><br><br></td>
           </tr></label></td>
           <tr>
             <td><label for="email"><b>VALID EMAIL_ID:<b /></label></t d>
-            <td><input type="text" placeholder="Enter Email Address" name="email" required><br><br></td>
+            <td><input type="text" placeholder="Enter Email Address" name="email"><br><br></td>
           </tr>
           <tr>
             <td><label for="phn"><b>VALID Phone Number:</b></label></td>
-            <td><input type="text" placeholder="Enter phone number" name="phn" required><br><br></td>
+            <td><input type="text" placeholder="Enter phone number" name="phn"><br><br></td>
           </tr>
           <tr>
             <td><label for="accn"><b>VALID Account_Number:<b /></label></t d>
-            <td><input type="text" placeholder="Enter Email Address" name="accn" required><br><br></td>
+            <td><input type="text" placeholder="Enter Email Address" name="accn"><br><br></td>
           </tr>
           <tr>
             <td><label for="addrs"><b>VALID ADDRESS:</b></label></td>
@@ -50,9 +62,9 @@
             <td><input type="file" id="img" name="img" accept="image/*"><br><br></td>
           </tr>
         </table> <br><br>
-        <button type="submit">REGISTER</button><br>
-        
+        <button id="mybtn" type="submit" onclick="validate()">REGISTER</button><br>
       </form>
+      
     </div>
   </div>
 </body>
