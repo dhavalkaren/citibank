@@ -3,26 +3,24 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SignUp Page</title>
   <link rel="stylesheet" href="./css/signup.css">
-  
+
   <style>
 
   </style>
 </head>
 
 <body>
-  <div id="snackbarnm">Name Required..</div>
-  <div id="snackbarpwd">Password Required..</div>
-  <div id="snackbareml">Email Required..</div>
-  <div id="snackbarphn">Phone Number Required..</div>
-  <div id="snackbarphnck">Phone Number Of 10 Digit..</div>
-  <div id="snackbaracc">Account Number Required..</div>
-  <div id="snackbaradd">Address Required..</div>
-  <div id="snackbarbd">BIRTHDAY Required..</div>
+
   <h1 align="center">FILL DETAILS FOR REGISTRATION*</h1>
   <div class="main">
+    <div id="snackbarnm"></div>
+    
     <div class="box-2">
       <form name="myform" id="myform" align="center">
         <a href="./login.html">Already Have Acoount?</a>
@@ -62,9 +60,9 @@
             <td><input type="file" id="img" name="img" accept="image/*"><br><br></td>
           </tr>
         </table> <br><br>
-        <button id="mybtn" type="submit" onclick="validate()">REGISTER</button><br>
+        <button id="mybtn" type="submit" onclick="validate()">REGISTER</button><br><br>
       </form>
-      
+
     </div>
   </div>
   <script src="./scripts/signup.js"></script>

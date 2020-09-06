@@ -13,56 +13,80 @@ function validate() {
   var eml = document.getElementsByName("email")[0].value;
   var bd = document.getElementsByName("birthday")[0].value;
   var patt = /^\d{10}$/;
-  var chkphn=patt.test(phn);
+  var chkphn = patt.test(phn);
   console.log(chkphn);
   console.log("In func");
   if (nm == "") {
-    var x = document.getElementById("snackbarnm");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! Name Required..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else if (pwd == "") {
-    var x = document.getElementById("snackbarpwd");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! Password Required..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else if (eml == "") {
-    var x = document.getElementById("snackbareml");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! Email Required..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else if (phn == "") {
-    var x = document.getElementById("snackbarphn");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! Phone Number Required..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else if (accn == "") {
-    var x = document.getElementById("snackbaracc");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! Account Number Required..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else if (add == "") {
-    var x = document.getElementById("snackbaradd");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! Address Required..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else if (bd == "") {
-    var x = document.getElementById("snackbarbd");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! BIRTHDAY Required..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else if (chkphn == false) {
-    var x = document.getElementById("snackbarphnck");
-    x.className = "show";
-    console.log("In If loop");
-    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+    var div = document.createElement("div");
+    div.className = "alert alert-danger alert-dismissible";
+    div.innerHTML = "<a href='#' class='close' data-dismiss='alert' aria-label='close'>'&times;</a> <strong>ERROR!! Phone Number Of 10 Digit..</strong>";
+    div.style.width = "250px";
+    div.style.marginLeft = "1050px";
+    div.style.marginTop = "160px";
+    document.getElementById("snackbarnm").appendChild(div);
   }
   else {
     window.location.href = "./login.html";
