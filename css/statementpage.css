@@ -27,8 +27,8 @@ table {
     background-image: url("../img/money.jpg");
 }
 
-.menu {
-    height: 70px;
+.menu1 {
+    height: 90px;
     position: sticky;
     top: 0;
     background-color: black;

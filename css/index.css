@@ -1,10 +1,11 @@
 * {
     margin: 0px;
 }
-
+html{
+    scroll-behavior: smooth;
+  }
 body {
     background-color: rgb(0, 0, 0);
-    
     color: white;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
@@ -43,8 +44,9 @@ body {
     background-color: rgb(179, 157, 157);
     background-image: linear-gradient(180deg, #59aecf,#363434);    
 }
-.header {
-    padding-top: 20px;
+.header1 {
+    height: 50px;
+    padding: 1px;
     border: 2px;
     height: 60px;
     color: rgb(0, 0, 0);
@@ -100,9 +102,26 @@ body {
     height: 70px;
     position:sticky;
     top: 0;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.658);
     box-shadow: 2px 2px 20px black;
 }
+.menu a:link,
+a:visited {
+    
+    font-size: 25px;    
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 20px black;
+}
+
+.menu a:hover,
+a:active {
+    color: rgb(216, 37, 37);
+    
+}
+
 .info{
     padding-left: 140px;
     color: black;
@@ -127,22 +146,23 @@ textarea {
 .right {
     
     right: 500px;
-    background-color: rgb(0, 0, 0);
+    
 }
-a:link,a:visited{
+.card a:link,a:visited{
     width: 50px;
     height: 20px;
+    border-radius: 12px;
     font-size: 20px;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.281);
     color: white;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     box-shadow: 2px 2px 20px black;
 }
-a:hover, a:active {
-    color: rgb(15, 4, 4);
-    background-color: rgb(255, 250, 250);
+.card a:hover, a:active {
+    color: rgba(15, 4, 4, 0.932);
+    background-color: rgba(255, 250, 250, 0.884);
 }
 .overlay {
     height: 0%;
@@ -158,16 +178,13 @@ a:hover, a:active {
 }
 
 .overlay-content {
-    position: relative;
-    top: 15%;
-    left: 4%;
+    position: relative;        
     width: 100%;
     text-align: center;
     margin-top: 30px;
 }
 
 .overlay a {
-
     padding: 8px;
     text-decoration: none;
     font-size: 50px;
@@ -176,18 +193,15 @@ a:hover, a:active {
     transition: 0.3s;
     
 }
-.slideshow-container {
+.slideshow-container1 {
     margin-top: 100px;
-    max-width: 1330px;
+    max-width: 1345px;
     margin: auto;
     background-color: white;
 }
 
-.slide {
+.slide1 {
     background-color: white;
-    
-}
-.slide img{
     
 }
 
@@ -217,9 +231,7 @@ a:hover, a:active {
 .mySlides {
     display: none;
 }
-#myCarousel  a:hover,#myCarousel a:focus,#myCarousel a:visited{
-    border-radius: 50%;
-}
+
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;

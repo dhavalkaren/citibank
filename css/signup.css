@@ -1,7 +1,7 @@
 body {
-    margin: 0px; background-image: url("../img/crop.jpg");
+    margin: 0px; background-image: url("../img/redbl.jpg");
     background-repeat: no-repeat;
-    background-size: cover;    
+       
   }
 
   h1 {
@@ -20,7 +20,7 @@ body {
     width: 600px;
     height: 700px;
     background: rgba(70, 66, 66, 0.377);
-    color: rgb(44, 28, 21);
+    color: rgb(240, 230, 226);
     font-weight: bold;
     text-shadow: 1px 1px 1px black;
     left: 50%;
@@ -79,14 +79,14 @@ body {
   .box-2 input[type="submit"]:hover {
     cursor: pointer;
     background: orange;
-    color: #000;
+    color: rgb(10, 8, 8);
   }
 
   .box-2 a {
     text-align: center;
     font-size: xx-large;
     margin-top: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(243, 233, 233);
 
   }
  

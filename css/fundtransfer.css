@@ -17,7 +17,28 @@ body {
     background-image: url("../img/money.jpg");
 }
 
-.menu {
+.menu{
+    height: 70px;
+    position:sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.959);
+    box-shadow: 2px 2px 20px black;
+}
+.menu a:link,
+a:visited {
+    
+    font-size: 25px;    
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 20px black;
+}
+
+.menu a:hover,
+a:active {
+    color: rgb(216, 37, 37);    
+}.menu {
     height: 70px;
     position: sticky;
     top: 0;
@@ -52,7 +73,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-a:link,
+.fundtr a:link,
 a:visited {
     width: 50px;
     height: 20px;
@@ -65,7 +86,7 @@ a:visited {
     box-shadow: 2px 2px 20px black;
 }
 
-a:hover,
+.fundtr a:hover,
 a:active {
     color: rgb(15, 4, 4);
     background-color: rgb(255, 250, 250);

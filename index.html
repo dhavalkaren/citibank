@@ -2,339 +2,434 @@
 
 <head>
 	<title>Welcome To CiTi BANK</title>
-	
-	<link rel="stylesheet" href="./css/index.css">	
-	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./css/index.css">
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		body{
+		body {
 			width: auto;
 		}
 	</style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarSupportedContent">
 
-	<div class="right">
-		<div class="header">
-			<h1 align="center">Welcome To Your CITI BANK</h1>
+	<div class="header1">
+		<h1 align="center">Welcome To Your CITI BANK</h1>
+	</div>
+	<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Something else here</a>
+			  </div>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link disabled" href="#">Disabled</a>
+			</li>
+		  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		  </form>
 		</div>
-
-		<div class="menu"><br>
-
-			<a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Log In/Sign
-				Up</a>&nbsp;&nbsp;
-			<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
-			<a href="#issue"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Have A
-				Issue</a>&nbsp;&nbsp;
-			<i class="fa fa-male" aria-hidden="true"></i><a href="#meet">Meet Us </a> &nbsp;&nbsp;
-			<a href="#services"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;&nbsp;Services</a>
-			<a href="./mydetails.html"><i class="fa fa-address-card-o"
-					aria-hidden="true"></i>&nbsp;&nbsp;Profile</a><br><br>
-
+	  </nav>-->
+	<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+		style="padding-top: 10px;height: 80px;position:sticky;top: 0;background-color: rgba(0, 0, 0, 0.658);box-shadow: 2px 2px 20px black;">
+		<a class="navbar-brand" href="#">
+			<img src="./img/symbol.png" height="30" width="30">
+		</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top:10px;">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<span style="font-size:20px;cursor:pointer;left:0px;" onclick="openNav()">&#9776;MORE</span>
+				</li>
+				<li class="nav-item">
+					<a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Log In/SignUp</a>
+				</li>
+				<li class="nav-item">
+					<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
+				</li>
+				<li class="nav-item">
+					<a href="#issue"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;&nbsp;Have
+						AIssue</a>&nbsp;&nbsp;
+				</li>
+				<li class="nav-item">
+					<a href="#meet"><i class="fa fa-male" aria-hidden="true"></i>&nbsp;Meet Us </a> &nbsp;&nbsp;
+				</li>
+				<li class="nav-item">
+					<a href="#services"><i class="fa fa-university" aria-hidden="true"></i>&nbsp;&nbsp;Services</a>
+				</li>
+				<li class="nav-item">
+					<a href="./mydetails.html"><i class="fa fa-address-card-o"
+							aria-hidden="true"></i>&nbsp;&nbsp;Profile</a>
+				</li>
+			</ul>
 		</div>
+	</nav>-->
 
-		<div id="myNav" class="overlay">
-			<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="overlay-content">
-				<a href="./policy.html" target="_blank">Security & Policy </a><br>
-				<a href="#">Login As Admin </a><br>
-				<a href="./alluser.html">Clients</a><br>
-				<a href="index.html#meet" target="_blank">Contact</a><br>
+	<div class="menu"><br>
+		<span style="font-size:20px;cursor:pointer;left:0px;" onclick="openNav()">&#9776;MORE</span>
+        <a href="login.html"><i class="fa fa-sign-in" aria-hidden="true" ></i>Log In/Sign
+            Up</a>&nbsp;&nbsp;
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true" ></i>Home</a>&nbsp;&nbsp;
+        <a href="index.html#issue"><i class="fa fa-info-circle" aria-hidden="true" ></i>Have A
+            Issue</a>&nbsp;&nbsp;
+        <a href="index.html#meet"><i class="fa fa-male" aria-hidden="true" ></i>Meet Us </a>
+        &nbsp;&nbsp;
+        <a href="index.html#services"><i class="fa fa-university" aria-hidden="true" ></i>Services</a>
+        <a href="./mydetails.html"><i class="fa fa-address-card-o" aria-hidden="true" ></i>Profile</a><br><br>
+
+    </div>
+
+
+
+
+	<div id="myNav" class="overlay">
+		<a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="./policy.html" target="_blank">Security & Policy </a><br>
+			<a href="#">Login As Admin </a><br>
+			<a href="./alluser.html">Clients</a><br>
+			<a href="index.html#meet" target="_blank">Contact</a><br>
+		</div>
+	</div>
+
+
+	<div class="slide1" style="z-index: 1;">
+		<div class="slideshow-container1">
+
+			<div class="mySlides1">
+				<img src="./img/meet.jpg" style="filter: blur(1px);width:100%; height: 550px;background-size: cover;">
+				
 			</div>
-		</div><span style="font-size:20px;cursor:pointer;padding-left: 1230px;" onclick="openNav()">&#9776;
-			MORE</span>
 
-<div class="white" style="background-color: white;">
-	<br>
-</div>
-
-		<div class="slide">
-			<div class="slideshow-container">
-
-				<div class="mySlides fade">
-					<img src="./img/meet.jpg" style="filter: blur(1px);width:100%; height: 550px;background-size: cover;">
-					<div class="text">
-						<h4 style="color: #fff9f9ef;font-size: 49px;">DO YOU NEED A NEW</h4>
-						<h1 style="color: #000000;font-size: 39px;">SERVICE OF BANK?</h1>
-						<h3 style="color: #050404;margin-bottom: 50px;font-size: 59px;">Check CitiBank included multiple features</h3>
-					</div>
-				</div>
-
-				<div class="mySlides fade">
-					<img src="./img/slide-02.jpg" style="width:100%; height: 550px;background-size: cover;">
-					<div class="text">
-						<h4 style="color: #4a8fcfc7;font-size: 39px;">OUR BANK CLIENTS</h4>
-						<h1 style="color: #5e5b5bc7;font-size: 29px;"> ALL AROUND WORLD</h1>
-						<h3 style="color: #0e0b0bc7;margin-bottom: 120px;font-size: 49px;">Check CitiBank CLIENTS MASS
-						</h3>
-					</div>
-				</div>
-
-				<div class="mySlides fade">
-					<img src="./img/slide-03.jpg" style="width:100%; height: 550px;background-size: cover;">
-					<div class="text" style="margin-left: 320px;">
-						<h4 style="color: #000000c4;font-size: 49px;">DO YOU NEED </h4>
-						<h1 style="color: #490d0dd0;font-size: 39px;">AN EDUCATIONAL LOAN?</h1>
-						<h3 style="color: #000000d0;margin-bottom: 110px;font-size: 39px;">Check CitiBank LOAN FEATURES
-						</h3>
-					</div>
-				</div>
-
+			<div class="mySlides1">
+				<img src="./img/slide-02.jpg" style="width:100%; height: 550px;background-size: cover;">
+				
 			</div>
-			<div style="text-align:center">
-				<span class="dot" onclick="currentSlide(1)"></span>
-				<span class="dot" onclick="currentSlide(2)"></span>
-				<span class="dot" onclick="currentSlide(3)"></span>
-			</div> 			
 
-		</div>
-
-
-		<div class="info">
-			<br><br>
+			<div class="mySlides1">
+				<img src="./img/slide-03.jpg" style="width:100%; height: 550px;background-size: cover;">
+				
+			</div>
 			<br>
-			<div class="card1" style="margin-left: 80px">
-				<!--background-image: linear-gradient(90deg, #f6ecfa,#000000);-->
-				<img src="./img/1.jpg" width="260" height="150">
-				<center>
-					<font size="+2" style="color: rgb(247, 183, 130);">For your future</font><br><br>
-					Meet our Agent for all our range of products and services,
-					rules of our products and everything related to your savings in pension.
-				</center>
-			</div>
-			<div class="card1" style="margin-left: 80px">
-				<img src="./img/2.jpg" width="260" height="150">
-				<center>
-					<font size="+2" style="color:  rgb(247, 183, 130);">Protection With You!</font><br><br>
-					Find all the support and information they need to make all decisions
-					about saving for your future.
-				</center>
-			</div>
-			<div class="card1" style="margin-left: 80px">
-				<img src="./img/3.jpg" width="260" height="150">
-				<center>
-					<font size="+2" style="color:  rgb(247, 183, 130);">Zone Saver</font><br><br>
-					Accompany relevant share you mean,
-					renewed and information of interest to learn to save you and your projects come true.
-				</center>
-			</div>
-			<br><br><br><br>
+		</div>
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
 		</div>
 
-		<section id="services">
-			<br><br><br><br><br>
+	</div>
+
+
+	<div class="info">
+		<br><br>
+		<br>
+		<div class="card1" style="margin-left: 80px">
+			<!--background-image: linear-gradient(90deg, #f6ecfa,#000000);-->
+			<img src="./img/1.jpg" width="260" height="150">
 			<center>
-				<h2>
-					<font size="+2">Our Bank Services:</font>
-					<hr>
-				</h2>
+				<font size="+2" style="color: rgb(247, 183, 130);">For your future</font><br><br>
+				Meet our Agent for all our range of products and services,
+				rules of our products and everything related to your savings in pension.
 			</center>
-			<br><br>
+		</div>
+		<div class="card1" style="margin-left: 80px">
+			<img src="./img/2.jpg" width="260" height="150">
 			<center>
-				<div class="card">
+				<font size="+2" style="color:  rgb(247, 183, 130);">Protection With You!</font><br><br>
+				Find all the support and information they need to make all decisions
+				about saving for your future.
+			</center>
+		</div>
+		<div class="card1" style="margin-left: 80px">
+			<img src="./img/3.jpg" width="260" height="150">
+			<center>
+				<font size="+2" style="color:  rgb(247, 183, 130);">Zone Saver</font><br><br>
+				Accompany relevant share you mean,
+				renewed and information of interest to learn to save you and your projects come true.
+			</center>
+		</div>
+		<br><br><br><br>
+	</div>
+
+	<section id="services">
+		<br><br><br><br><br>
+		<center>
+			<h2>
+				<font size="+2">Our Bank Services:</font>
+				<hr>
+			</h2>
+		</center>
+		<br><br>
+		<center>
+			<div class="card" data-toggle="popover" title="You Can Transfer Funds To Account Here"
+				style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
 					<img src="img/fundtransfer1.jpg" height="200px" width="250px" style="margin-right:30px"><br>
 					<a href="./fundtransfer.html">Fund Transfers</a>
 				</div>
-				<div class="card">
+			</div>
+			<div class="card" style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
 					<img src="img/bk.jpg" height="200px" width="250px" style="margin-right:30px"><br>
 					<a href="./statementpage.html">View Transactions</a>
 				</div>
-				<div class="card">
+			</div>
+			<div class="card" style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
 					<img src="img/l2.png" height="200px" width="250px" style="margin-right:30px"><br>
 					<a href="./loan.html">Apply For Loan</a>
 				</div>
-				<div class="card">
-					<img src="img/checkbook.png" onclick="checkbook()" height="200px" width="250px" style="margin-right:30px;"><br>
+			</div>
+			<div class="card" style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
+					<img src="img/checkbook.png" onclick="checkbook()" height="200px" width="250px"
+						style="margin-right:30px;"><br>
 					<a href="./requestcheckbook.html">Request Checkbook</a>
 				</div>
-				<div class="card">
+			</div>
+			<div class="card" style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
 					<img src="img/movie.jpg" height="200px" width="250px" style="margin-right:30px"><br>
 					<a href="./movieticket.html">Movie Ticket</a>
 				</div>
-				<div class="card">
+			</div>
+			<div class="card" style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
 					<img src="img/mm.jpg" height="200px" width="250px" style="margin-right:30px"><br>
 					<a href="./fundmobile.html">Transfer By Mobile </a>
 				</div>
-				<div class="card">
+			</div>
+			<div class="card" style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
 					<img src="img/bll.jpg" height="200px" width="250px" style="margin-right:30px"><br>
 					<a href="paybill.html">Pay Bill By Credit card</a>
 				</div>
-				<div class="card">
+			</div>
+			<div class="card" style="width: 300px;height: 380px;">
+				<div class="card-body"
+					style="box-shadow: 2px 2px 20px black;border-radius: 5px;transition: transform .3s;color: rgb(18, 70, 129);background-color: rgb(12, 7, 7);">
 					<img src="img/wallt.jpg" height="200px" width="250px" style="margin-right:30px"><br>
 					<a href="./wallet.html">Wallet</a>
 				</div>
-				<br><br><br><br><br><br><br>
-			</center>
-		</section>
+			</div>
+			<br><br><br><br><br><br><br>
+		</center>
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="popover"]').popover();
+			});
+		</script>
+	</section>
 
-		<div class="parallax">
-			<table border="0" width="1350px">
+	<div class="parallax">
+		<div class="row text-center" style="font-size:30px;">
+				<div class="col-12 col-md-3 col-sm-12 col-lg-3">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Wallets<br>
+					850
+				</div>
+				<div class="col-12 col-md-3 col-sm-12 col-lg-3">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Transections<br>
+					3250
+				</div>
+				<div class="col-12 col-md-3 col-sm-12 col-lg-3">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Branches<br>
+					100
+				</div>
+				<div class="col-12 col-md-3 col-sm-12 col-lg-3">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					Clients<br>
+					624
+				</div>
+			
+		</div>
+
+	</div><br><br>
+
+	<center>
+		<section id="issue">
+			<br><br><br><br>
+			<font size="+3">HAVE A ISSUE</font><br>
+			<hr>
+			<center>
+				<h3>*Fill the form And We will come in contact to you</h3>
+			</center>
+
+			<table style="box-shadow: 3px 3px 3px 3px black;">
 				<tr>
 					<td>
-						<center>
-							<br><br>
-							<font size="+3"><b>Wallets</b></font><br><br>
-							<font size="+2">850</font>
-						</center>
+						<font size="+2">Call Us On</font><br>
+						+91 888 888 8888<br>
 					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					<td>
 						<center>
-							<br><br>
-							<font size="+3"><b>Transections</b></font><br><br>
-							<font size="+2">3250</font>
+							<font size="+2">Visit Our Office</font><br>
 						</center>
+						Ahmedabad,Gujarat,India.<br>
 					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 					<td>
-						<center>
-							<br><br>
-							<font size="+3"><b>Branches</b></font><br><br>
-							<font size="+2">100</font>
-						</center>
-					</td>
-					<td>
-						<center>
-							<br><br>
-							<font size="+3"><b>Clients</b></font><br><br>
-							<font size="+2">624</font>
-						</center>
+						<br>
+						<font size="+2">Email Us At</font><br>
+						citibank@gmail.com<br><br>
 					</td>
 				</tr>
 			</table>
-		</div><br><br>
+			<br><br>
+			<table width="800px">
+				<tr>
+					<td align="center">Name:</td>
+					<td align="center"><input name="name" id="name" type="text" placeholder="Your Name*" required>
+					</td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr style="margin-top: 20px;">
+					<td align="center">Email:</td>
+					<td align="center"><input name="email" id="email" type="email" placeholder="Your Email*" required>
+					</td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr style="margin-top: 20%;">
+					<td align="center">Subject:</td>
+					<td align="center"><input name="subject" id="subject" type="text" placeholder="Your Subject*"
+							required></td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr style="margin-top: 20%;">
+					<td align="center">Message:</td>
+					<td align="center"><textarea name="comments" id="comments" rows="4"
+							placeholder="Your message..."></textarea></td>
+				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr>
+					<td colspan="2" align="center"><button style="box-shadow: 2px 2px 2px black;">Send
+							Feedback</button></td>
+				</tr>
+			</table>
+			<br><br><br><br><br><br><br><br><br>
+		</section>
 
-		<center>
-			<section id="issue">
-				<br><br><br><br>
-				<font size="+3">HAVE A ISSUE</font><br>
-				<hr>
+		<section id="meet">
+			<br><br>
+			<h2>Meet Us </h2>
+			<hr>
+			<div align="center">
+				<img src="img/drgn.jpg" height="200" width="200">
+			</div>
+			<p>If You Want To Make Website Like This Then You Can Contact Me.</p>
+			<p>Name : Dhaval.R.Karen </p>
+			<p>Birthday : 5 October 2000 </p>
+			<p>Phone : 8888 888888 </p>
+			<p>City : Ahmedabad, Gujarat </p>
+			<p>Degree : B-Tech </p>
+			<p>Mail : citibank@gmail.com </p>
+			<p>Freelance : Available</p>
+			<p>Website Desiging: Available</p>
+			<br><br><br><br><br><br><br>
+			<hr>
+
+
+			<div class="footer">
 				<center>
-					<h3>*Fill the form And We will come in contact to you</h3>
-				</center>
 
-				<table style="box-shadow: 3px 3px 3px 3px black;">
-					<tr>
-						<td>
-							<font size="+2">Call Us On</font><br>
-							+91 888 888 8888<br>
-						</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td>
-							<center>
-								<font size="+2">Visit Our Office</font><br>
-							</center>
-							Ahmedabad,Gujarat,India.<br>
-						</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td>
+
+					<div class="row">
+						<div class="col-12 col-md-4 col-sm-12 col-lg-4">
+							<font size="+2"><i class="fa fa-shield" aria-hidden="true"></i>&nbsp;For
+								Security
+							</font><br><br>
+							Got questions For Our Bank or the Bank Security?
+						</div>
+
+
+
+						<div class="col-12 col-md-4 col-sm-12 col-lg-4">
+							<font size="+2"><i class="fa fa-university" aria-hidden="true"></i> Services
+							</font>
+							<br><br>
+							Find out the service status of Our Bank and its <br>related services.
+						</div>
+
+
+						<div class="col-12 col-md-4 col-sm-12 col-lg-4">
+							<font size="+2"><i class="fa fa-question" aria-hidden="true"></i> FAQ</font>
+							<br><br>
+							Read the Frequently Asked <br>Questions about our Services and <br>see if your
+							question has been answered.
+
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-12 col-md-6 col-sm-12 col-lg-6">
+							<font size="+10"><i class="fa fa-bar-chart" aria-hidden="true"></i> CITIBANK
+							</font>
+						</div>
+
+
+						<div class="col-12 col-md-6 col-sm-12 col-lg-6">
 							<br>
-							<font size="+2">Email Us At</font><br>
-							citibank@gmail.com<br><br>
-						</td>
-					</tr>
-				</table>
-				<br><br>
-				<table width="800px">
-					<tr>
-						<td align="center">Name:</td>
-						<td align="center"><input name="name" id="name" type="text" placeholder="Your Name*" required>
-						</td>
-					</tr>
-					<tr></tr>
-					<tr></tr>
-					<tr>
-						<td align="center">Email:</td>
-						<td align="center"><input name="email" id="email" type="email" placeholder="Your Email*"
-								required></td>
-					</tr>
-					<tr></tr>
-					<tr></tr>
-					<tr>
-						<td align="center">Subject:</td>
-						<td align="center"><input name="subject" id="subject" type="text" placeholder="Your Subject*"
-								required></td>
-					</tr>
-					<tr></tr>
-					<tr></tr>
-					<tr>
-						<td align="center">Message:</td>
-						<td align="center"><textarea name="comments" id="comments" rows="4"
-								placeholder="Your message..."></textarea></td>
-					</tr>
-					<tr></tr>
-					<tr></tr>
-					<tr>
-						<td colspan="2" align="center"><button style="box-shadow: 2px 2px 2px black;">Send Feedback</button></td>
-					</tr>
-				</table>
-				<br><br><br><br><br><br><br><br><br>
-			</section>
+							</i> CitiBank Bank Website
+							&nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a
+								style="color: aliceblue" herf="#about">About</a> - <a style="color: aliceblue;"
+								href="policy.html">PrivacyPolicy</a>
+						</div>
 
-			<section id="meet">
-				<br><br>
-				<h2>Meet Us </h2>
-				<hr>
-				<div align="center">
-					<img src="img/drgn.jpg" height="200" width="200">
-				</div>
-				<p>If You Want To Make Website Like This Then You Can Contact Me.</p>
-				<p>Name : Dhaval.R.Karen </p>
-				<p>Birthday : 5 October 2000 </p>
-				<p>Phone : 8888 888888 </p>
-				<p>City : Ahmedabad, Gujarat </p>
-				<p>Degree : B-Tech </p>
-				<p>Mail : citibank@gmail.com </p>
-				<p>Freelance : Available</p>
-				<p>Website Desiging: Available</p>
-				<br><br><br><br><br><br><br>
-				<hr>
+					</div>
 
 
-				<div class="footer">
-					<center>
-						<table border="0" width="1230px" height="300px" style="margin-left: 5%">
-							<tr>
-								<td>
-									<font size="+2"><i class="fa fa-shield" aria-hidden="true"></i>&nbsp;For Security
-									</font><br><br>
-									Got questions For Our Bank or the Bank Security?
-								</td>
-								<td>
-									<font size="+2"><i class="fa fa-university" aria-hidden="true"></i> Services</font>
-									<br><br>
-									Find out the service status of Our Bank and its <br>related services.
-								</td>
-								<td>
-									<br>
-									<font size="+2"><i class="fa fa-question" aria-hidden="true"></i> FAQ</font><br><br>
-									Read the Frequently Asked <br>Questions about our Services and <br>see if your
-									question has been answered.
-								</td>
-							</tr>
-							<tr>
-								<br>
-								<td>
-									<font size="+10"><i class="fa fa-bar-chart" aria-hidden="true"></i> CITIBANK</font>
-								</td>
-								<td colspan="2"><i class="fa fa-copyright" aria-hidden="true"></i> CitiBank Bank Website
-									&nbsp;&nbsp;-&nbsp;&nbsp; &copy;Devloped By Dhaval Karen&nbsp;&nbsp; - <a
-										style="color: aliceblue" herf="#about">About</a> - <a style="color: aliceblue;"
-										href="policies.html">Privacy
-										Policy</a></td>
-							</tr>
-						</table>
-
-					</center>
-				</div>
-			</section>
-	</div>
-	<script src="./scripts/index.js"></script>
+				</center>
+			</div>
+		</section>
+		</div>
+		<script src="./scripts/index.js"></script>
 </body>
 
 </html>
