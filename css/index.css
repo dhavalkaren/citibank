@@ -1,12 +1,11 @@
 * {
     margin: 0px;
 }
-html{
+/*html{
     scroll-behavior: smooth;
-  }
+  }*/
 body {
     background-color: rgb(0, 0, 0);
-    color: white;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
 #services{
@@ -98,29 +97,7 @@ body {
 #issue textarea{
     width: 500px;
 }
-.menu{
-    height: 70px;
-    position:sticky;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.658);
-    box-shadow: 2px 2px 20px black;
-}
-.menu a:link,
-a:visited {
-    
-    font-size: 25px;    
-    color: white;
-    padding: 12px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: 2px 2px 20px black;
-}
 
-.menu a:hover,
-a:active {
-    color: rgb(216, 37, 37);
-    
-}
 
 .info{
     padding-left: 140px;
@@ -193,6 +170,8 @@ textarea {
     transition: 0.3s;
     
 }
+
+
 .slideshow-container1 {
     margin-top: 100px;
     max-width: 1345px;
